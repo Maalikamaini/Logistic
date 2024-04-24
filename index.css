@@ -1,0 +1,197 @@
+ 
+        .navbar {
+            background-color: white;
+        }
+        .carousel-item {
+            height: 70vh;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+
+            /* CSS for hover effect */
+            .circle-hover {
+                width: 200px; /* Set the width */
+                height: 200px; /* Set the height */
+                overflow: hidden; /* Hide overflow content */
+            }
+            
+            .circle-hover img {
+                width: 100%; /* Set image width to 100% */
+                height: 100%; /* Set image height to 100% */
+                object-fit: cover; /* Cover the div without distortion */
+            }
+            
+            .circle-hover:hover {
+                transform: scale(1.1); /* Increase size on hover */
+                transition: transform 0.3s ease-in-out; /* Smooth transition */
+                border-radius: 50%; /* Ensure div remains a circle even when scaled */
+            }
+            
+      /* Light grey border */
+      .custom-border {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 20px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    /* Bullet points */
+    .custom-border ul {
+        list-style-type: disc;
+        text-align: left;
+    }
+   /* Marquee container styling */
+   .custom-bordermarquee{
+        padding: 20px;
+        text-align: center;
+        margin-top: 30px;
+   }
+.marquee-container {
+    overflow: hidden; /* Hide overflow */
+    width: 100%; /* Full width */
+    padding: 0; /* Padding to ensure the marquee starts and ends within the div */
+}
+
+.marquee {
+    width: auto; /* Set width to auto to fit content */
+    display: inline-block; /* Make marquee inline-block to fit the container width */
+}
+
+/* Style images within the marquee */
+.marquee img {
+    border: 0;
+    padding: 5px;
+    height: 150px; /* Set image height */
+    width: 200px; /* Set image width */
+}
+/* Grey background color */
+.grey-bg {
+    background-color: #5a5a5a; /* Grey background color */
+    color: white;
+    padding-top: 30px; /* Add some top padding */
+    padding-bottom: 30px; /* Add some bottom padding */
+    position: relative; /* Add relative positioning to the container */
+}
+
+/* Light grey box shadow */
+.light-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light grey box shadow */
+}
+
+/* Add spacing between the headings and the border of the outer div */
+.container-fluid > .row > div {
+    margin-top: 20px; /* Add margin to the top of each column */
+}
+
+/* Blue shadow at the top border */
+.grey-bg::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust to move the shadow slightly above the div */
+    left: 0;
+    width: 100%;
+    height: 20px; /* Increase the height of the shadow */
+    background: linear-gradient(to right, #b5bbc1, #f6f2f2); /* Blue to grey gradient */
+    z-index: 0; /* Ensure it's below the content */
+}
+
+/* Blue background color */
+.blue-bg {
+    background-color: #007BFF; 
+    
+}
+
+/* Style footer icons */
+.blue-bg a {
+    font-size: 10px;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out; 
+}
+
+.blue-bg a:hover {
+    color: #0056b3; 
+}
+.blue-bg .right-link {
+    font-size: 15px;
+}
+.blue-bg .left-icons {
+    font-size: 10px;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+.blue-bg .left-icons {
+    font-size: 10px;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+/* Scroll to top button */
+.scroll-to-top {
+    width: 35px;
+    height: 35px;
+    border-radius: 10%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    display: none; /* Initially hidden */
+    background-color: #eaecef;
+    border: 0 ;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    
+    
+}
+
+.scroll-to-top:hover {
+    background-color: #5d6166;
+}
+
+/* Arrow icon styling */
+.scroll-to-top i {
+    font-size: 30px;
+    color: #052952;
+}
+.icon{
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+.carousel-item {
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(87%) sepia(12%) saturate(3291%) hue-rotate(330deg) brightness(90%) contrast(92%);
+    background-size: 60px 60px !important; /* Increase the background size */
+    width: 60px !important; /* Set width */
+    height: 60px !important; /* Set height */
+    position: absolute; /* Position the arrows */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+.carousel-control-prev {
+    left: 0; /* Position to the left */
+}
+
+.carousel-control-next {
+    right: 0; /* Position to the right */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 100%; /* Set width */
+    height: 100%; /* Set height */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    filter: invert(68%) sepia(82%) saturate(3723%) hue-rotate(334deg) brightness(101%) contrast(101%);
+    background-size: 60px 60px !important; /* Increase the background size on hover */
+}
+

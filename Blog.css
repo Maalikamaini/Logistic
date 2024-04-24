@@ -1,0 +1,331 @@
+ /* Add custom styles here */
+ .navbar {
+    background-color: white;
+}
+
+/* Initial styles for navbar */
+.navbar {
+    transition: all 0.3s;
+    /* Smooth transition */
+}
+
+/* Reduced size for navbar */
+.navbar.scrolled {
+    padding: 5px 0;
+    /* Adjust padding for reduced size */
+    height: 60px;
+    /* Adjust height for reduced size */
+}
+
+/* Adjusting navbar brand size */
+.navbar-brand img {
+    height: 50px;
+    /* Adjust height for logo */
+    transition: all 0.3s;
+    /* Smooth transition */
+}
+
+/* Reduced size for logo */
+.navbar-brand.img-reduced img {
+    height: 40px;
+    /* Adjust height for reduced logo size */
+}
+
+
+
+.carousel-item {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* CSS for hover effect */
+.circle-hover:hover {
+    transform: scale(1.1);
+    /* Increase size on hover */
+    transition: transform 0.3s ease-in-out;
+    /* Smooth transition */
+}
+
+/* Light grey border */
+.custom-border {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Bullet points */
+.custom-border ul {
+    list-style-type: disc;
+    text-align: left;
+}
+
+/* Marquee container styling */
+.custom-bordermarquee {
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.marquee-container {
+    overflow: hidden;
+    /* Hide overflow */
+    width: 100%;
+    /* Full width */
+    padding: 0;
+    /* Padding to ensure the marquee starts and ends within the div */
+}
+
+.marquee {
+    width: auto;
+    /* Set width to auto to fit content */
+    display: inline-block;
+    /* Make marquee inline-block to fit the container width */
+}
+
+/* Style images within the marquee */
+.marquee img {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+/* Grey background color */
+.grey-bg {
+    background-color: #5a5a5a;
+    /* Grey background color */
+    color: white;
+    padding-top: 30px;
+    /* Add some top padding */
+    padding-bottom: 30px;
+    /* Add some bottom padding */
+    position: relative;
+    /* Add relative positioning to the container */
+}
+
+/* Light grey box shadow */
+.light-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Light grey box shadow */
+}
+
+/* Add spacing between the headings and the border of the outer div */
+.container-fluid>.row>div {
+    margin-top: 20px;
+    /* Add margin to the top of each column */
+}
+
+/* Blue shadow at the top border */
+.grey-bg::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    /* Adjust to move the shadow slightly above the div */
+    left: 0;
+    width: 100%;
+    height: 20px;
+    /* Increase the height of the shadow */
+    background: linear-gradient(to right, #b5bbc1, #f6f2f2);
+    /* Blue to grey gradient */
+    z-index: 0;
+    /* Ensure it's below the content */
+}
+
+/* Blue background color */
+.blue-bg {
+    background-color: #007BFF;
+
+}
+
+/* Style footer icons */
+.blue-bg a {
+    font-size: 10px;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.blue-bg a:hover {
+    color: #0056b3;
+}
+
+.blue-bg .right-link {
+    font-size: 15px;
+}
+
+.blue-bg .left-icons {
+    font-size: 10px;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.blue-bg .left-icons {
+    font-size: 10px;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Scroll to top button */
+.scroll-to-top {
+    width: 35px;
+    height: 35px;
+    border-radius: 10%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    display: none;
+    /* Initially hidden */
+    background-color: #eaecef;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+
+}
+
+.scroll-to-top:hover {
+    background-color: #5d6166;
+}
+
+/* Arrow icon styling */
+.scroll-to-top i {
+    font-size: 30px;
+    color: #052952;
+}
+
+.icon {
+    display: flex;
+    /* Use flexbox */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+
+/* Additional Custom Styles */
+.animate-chevron {
+    transform: translateX(-10px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.animate-sub-chevron {
+    transform: translateX(-5px) rotate(20deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for list items */
+.hover-item:hover {
+    background-color: #fafaf9;
+    /* Orange background color */
+    color: #fff;
+    /* White text color for better visibility */
+    cursor: pointer;
+    /* Change cursor to pointer */
+}
+
+/* Change color of chevron right to blue */
+.fas.fa-chevron-right,
+.fas.fa-bars {
+    color: #007BFF;
+}
+
+
+/* Hover effect for chevron icon */
+.hover-item:hover .fa-chevron-right {
+    transform: translateX(-10px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.one {
+    height: 2px;
+    width: 100%;
+    background-color: #007BFF;
+}
+
+.second {
+    height: 2px;
+    width: 100%;
+    padding-top: 5%;
+    background-color: #c7d5e4;
+}
+
+/* Add border to each item in the list */
+.list-unstyled li {
+    border-bottom: 1px solid #e0e0e0;
+    /* Add bottom border */
+    padding: 5px 0;
+    /* Add padding to space out items */
+}
+
+/* Remove bottom border for the last item in the list */
+.list-unstyled li:last-child {
+    border-bottom: none;
+}
+
+/* Add vertical line between left and right columns */
+.col-md-4.border-right {
+    border-right: 1px solid #e0e0e0;
+}
+
+.col-md-8 {
+    padding-left: 30px;
+    /* Adjust this value to increase or decrease space */
+}
+
+.blue-border {
+    border-bottom: 5px solid blue;
+}
+
+/* Card overlay */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Transparent white */
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s ease;
+    /* Smooth transition */
+    /* Transparent white */
+    display: none;
+    /* Initially hidden */
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Show overlay on hover and hide image */
+.card:hover img {
+    opacity: 0;
+    /* Hide image */
+}
+
+.card:hover .card-overlay {
+    display: flex;
+    opacity: 1;
+    /* Show overlay */
+    /* Show overlay */
+}
+
+/* Initial styles */
+.card-body {
+    background-color: white;
+    /* Initial background color */
+    color: black;
+    /* Initial text color */
+}
+
+/* Text styles */
+.card-overlay h5,
+.card-overlay p {
+    color: white
+        /* Text color to white */
+}
